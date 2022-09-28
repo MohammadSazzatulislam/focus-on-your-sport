@@ -6,12 +6,19 @@ import Player from '../Player/Player';
 const Players = () => {
     const [players, setPlayers] = useState([])
 
+    const [addCart , setAddCart] = useState([])
+
     useEffect(()=> {
         fetch('fakeDb.json')
         .then(res => res.json())
         .then(data => setPlayers(data))
     },[])
 
+    const handleAddButton = (player) => {
+        setAddCart(player)
+    }
+
+console.log(addCart)
 
     return (
         <div className='flex mx-auto justify-between  '>
@@ -24,6 +31,7 @@ const Players = () => {
                     players.map(player => <Player
                     key = {player.id}
                     player = {player}
+                    handleAddButton = {handleAddButton}
                     ></Player>)
                 }
             </div>
@@ -72,7 +80,7 @@ const Players = () => {
                         <h1 className='card-title text-xl font-semibold '> Playing Details </h1>
                         <div className='flex justify-between mt-5 py-3 bg-gray-200 px-4 rounded-md'>
                             <h1 className='card-title'>Playing time </h1>
-                            <h1 className='text-xl'> minutes</h1>
+                            <h1 className='text-xl'>{addCart.timeRequired} minutes</h1>
                         </div>
                         <div className='flex justify-between mt-5 py-3 bg-gray-200 px-4 rounded-md'>
                             <h1 className='card-title'>Break time </h1>
