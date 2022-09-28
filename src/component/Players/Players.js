@@ -12,8 +12,8 @@ const Players = () => {
 
 
     return (
-        <div>
-            <div>
+        <div className='flex mx-auto justify-between  '>
+            <div className='grid grid-cols-3 gap-5 p-24 '>
                 {
                     players.map(player => <Player
                     key = {player.id}

@@ -3,7 +3,7 @@ import Players from './component/Players/Players';
 
 function App() {
   return (
-    <div className="App">
+    <div className="mx-auto">
      <Players></Players>
     </div>
   );
