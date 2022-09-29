@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import {  faLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { getItemsDb, LocalDb } from '../Utilities/fakeDb';
+
 
 const Cart = ({time}) => {
-    const [cartTime , setCartTime] = useState(0)
+    const [cartTime , setCartTime] = useState(0)    
 
-    const eventHandle =(event) =>{
+    useEffect(()=> {
+        const storedCart = getItemsDb()
+        setCartTime(storedCart)
+    },[])
+
+
+     const eventHandle =(event) =>{
         setCartTime(event)
+        LocalDb(event)
     }
-
-
+   
+ 
     return (
         <div className="card w-96 bg-gray-300 rounded-none h-full p-5 ">
         <div className='flex justify-between mb-5'>
