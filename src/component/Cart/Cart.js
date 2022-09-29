@@ -2,6 +2,8 @@ import React, {  useEffect, useState } from 'react';
 import {  faLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getItemsDb, LocalDb } from '../Utilities/fakeDb';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Cart = ({time}) => {
@@ -18,6 +20,9 @@ const Cart = ({time}) => {
         LocalDb(event)
     }
    
+    const handleToast = () => {
+         toast("Activity Completed successfully!!!");
+    }
  
     return (
         <div className="card w-96 bg-gray-300 rounded-none h-full p-5 ">
@@ -71,7 +76,8 @@ const Cart = ({time}) => {
             </div>
 
             <div className="card-actions mt-16 ">
-                <button className="btn btn-primary rounded-sm w-full ">Add to list</button>
+                <button className="btn btn-primary rounded-sm w-full " onClick={handleToast} >Activity Completed</button>
+                <ToastContainer></ToastContainer>
             </div>
 
         </div>
