@@ -4,8 +4,7 @@ const Player = (props) => {
 
     const {img, name,description, age, timeRequired} = props.player
     return (
-        <div>
-            <div className="card w-64 bg-base-100 shadow-2xl p-5 ">
+            <div className="card lg:w-64 md:w-64 w-full sm:w-full bg-base-100 shadow-2xl p-5 mx-auto ">
                     <figure><img className='h-32 w-full rounded-lg' src={img} alt="Shoes" /></figure>
                 <div className="card pt-4">
                     <h2 className="card-title">{name}</h2>
@@ -17,7 +16,6 @@ const Player = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

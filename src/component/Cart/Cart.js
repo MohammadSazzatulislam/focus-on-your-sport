@@ -25,7 +25,7 @@ const Cart = ({time}) => {
     }
  
     return (
-        <div className="card w-96 bg-gray-300 rounded-none h-full p-5 ">
+        <div className="card lg:w-96 md:w-72 sm:w-full w-full bg-gray-300 rounded-none h-full p-5 mx-auto ">
         <div className='flex justify-between mb-5'>
             <div className="avatar">
                 <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
