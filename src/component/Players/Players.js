@@ -24,10 +24,10 @@ const Players = () => {
 
     return (
         <div className='flex flex-col justify-between lg:flex-row md:flex-row sm:flex-col gap-7 '>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto gap-7 lg:p-16 w-full'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto gap-8 lg:p-16 w-full'>
                 <div className='col-span-1 w-full mx-auto p-4 lg:col-span-3 md:col-span-2'>
-                    <h2 className="card-title text-3xl font-bold uppercase "> <FontAwesomeIcon icon = {faBasketball}></FontAwesomeIcon> Focus-on-your-Sport</h2>
-                    <h1 className='card-title text-2xl mt-5 '> Select today's Playing </h1>
+                    <h2 className="card-title text-3xl font-bold uppercase text-lime-700 "> <span className='text-orange-600'><FontAwesomeIcon icon = {faBasketball}></FontAwesomeIcon></span> Focus-on-your-Sport</h2>
+                    <h1 className='card-title text-2xl mt-5 text-emerald-700 '> Select today's Playing </h1>
                 </div>
                     {
                         players.map(player => <Player
@@ -64,7 +64,7 @@ const Players = () => {
                 </div>
             </div>
 
-            <div className=''>
+            <div>
                 {
                     <Cart time = {addCartTime} ></Cart>
                 }

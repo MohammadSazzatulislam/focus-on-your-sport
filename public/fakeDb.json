@@ -2,39 +2,39 @@
     {
       "id": "63348fbadfb86f3b9b31ce5b",
       "img": "https://images.unsplash.com/photo-1594623274890-6b45ce7cf44a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGJhc2tldGJhbGx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-      "name": "Middleton Gamble",
-      "description": "Deserunt consequat amet eu consectetur magna ullamco veniam .\r\n",
+      "name": "Morning Practice",
+      "description": "Deserunt consequat amet eu consectetur magna ullamco veniam amet .\r\n",
       "age": 27,
-      "timeRequired" : 10 
+      "timeRequired" : 20 
     },
     {
       "id": "63348fba15d7232a3d16db1a",
       "img": "https://images.unsplash.com/photo-1525918779320-0ca02e9a8b6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAzfHxiYXNrZXRiYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "name": "Moran Stevenson",
+      "name": "Dribbling",
       "description": "Esse proident duis magna quis veniam commodo. Cillum mollit dolore .\r\n",
       "age": 30,
-      "timeRequired" : 10 
+      "timeRequired" : 50 
     },
     {
       "id": "63348fba4962d24323055c69",
       "img": "https://images.unsplash.com/photo-1572181804423-c5df037abf13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMxfHxiYXNrZXRiYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "name": "Katina Matthews",
-      "description": "Exercitation aliqua quis dolore id laborum culpa. Nostrud qui aliquip .\r\n",
+      "name": "Play Match",
+      "description": "Exercitation aliqua quis dolore id laborum culpa. Nostrud qui aliquip quis .\r\n",
       "age": 23,
-      "timeRequired" : 10 
+      "timeRequired" : 40 
     },
     {
       "id": "63348fbaaa7956ed62e57e5b",
       "img": "https://images.unsplash.com/photo-1612769017821-ef1d212d5c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHxiYXNrZXRiYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "name": "Kara Bishop",
+      "name": "Throwing Practice",
       "description": "Consequat nulla ullamco tempor ut fugiat. Enim labore aute amet laborum.\r\n",
       "age": 20,
-      "timeRequired" : 10 
+      "timeRequired" : 30 
     },
     {
       "id": "63348fba0cb3d21cd88f0934",
       "img": "https://images.unsplash.com/flagged/photo-1580051706353-f037886dedac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzM2fHxiYXNrZXRiYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "name": "Fleming Weeks",
+      "name": "Passing Drills",
       "description": "Qui voluptate aliquip sunt in incididunt reprehenderit nostrud deserunt .\r\n",
       "age": 33,
       "timeRequired" : 10 
@@ -42,9 +42,9 @@
     {
       "id": "63348fba47afcb40c6199015",
       "img": "https://images.unsplash.com/photo-1548591903-d655da529fcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDU0fHxiYXNrZXRiYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "name": "Merle Preston",
+      "name": "Match Previous Practice",
       "description": "Consectetur enim esse eiusmod deserunt voluptate ullamco aliquip.\r\n",
       "age": 29,
-      "timeRequired" : 10 
+      "timeRequired" : 5 
     }
   ]
