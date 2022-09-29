@@ -6,19 +6,20 @@ import Player from '../Player/Player';
 const Players = () => {
     const [players, setPlayers] = useState([])
 
-    const [addCart , setAddCart] = useState([])
+    const [addCartTime , setAddCartTime] = useState(0)
 
     useEffect(()=> {
         fetch('fakeDb.json')
         .then(res => res.json())
         .then(data => setPlayers(data))
     },[])
-
-    const handleAddButton = (player) => {
-        setAddCart(player)
+    
+   
+    const handleAddButton = (time) => {
+       const newCartTime = addCartTime + time
+       setAddCartTime(newCartTime)
     }
 
-console.log(addCart)
 
     return (
         <div className='flex mx-auto justify-between  '>
@@ -37,6 +38,7 @@ console.log(addCart)
             </div>
 
             <div>
+               
                 <div className="card w-96 bg-gray-300 rounded-none h-full p-5  ">
                     <div className='flex justify-between mb-5'>
                         <div className="avatar">
@@ -80,11 +82,11 @@ console.log(addCart)
                         <h1 className='card-title text-xl font-semibold '> Playing Details </h1>
                         <div className='flex justify-between mt-5 py-3 bg-gray-200 px-4 rounded-md'>
                             <h1 className='card-title'>Playing time </h1>
-                            <h1 className='text-xl'>{addCart.timeRequired} minutes</h1>
+                            <h1 className='text-xl'>{addCartTime} minutes</h1>
                         </div>
                         <div className='flex justify-between mt-5 py-3 bg-gray-200 px-4 rounded-md'>
                             <h1 className='card-title'>Break time </h1>
-                            <h1 className='text-xl'> minutes</h1>
+                            <h1 className='text-xl'> {} minutes</h1>
                         </div>
 
                         <div className="card-actions mt-16 ">

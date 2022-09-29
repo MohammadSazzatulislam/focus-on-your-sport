@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Player = (props) => {
-    // console.log(props)
 
     const {img, name,description, age, timeRequired} = props.player
     return (
@@ -14,7 +13,7 @@ const Player = (props) => {
                     <p>For age : {age}</p>
                     <p>Time Required : {timeRequired} m</p>
                     <div className="card-actions my-4 ">
-                        <button onClick={()=> props.handleAddButton(props.player) } className="btn btn-primary rounded-sm w-full ">Add to list</button>
+                        <button onClick={()=> props.handleAddButton(timeRequired) } className="btn btn-primary rounded-sm w-full ">Add to list</button>
                     </div>
                 </div>
             </div>
