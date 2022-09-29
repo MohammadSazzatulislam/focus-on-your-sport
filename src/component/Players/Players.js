@@ -36,14 +36,32 @@ const Players = () => {
                         handleAddButton = {handleAddButton}
                         ></Player>)
                     }
-                {/* <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mx-auto w-full grid col-span-3 ">
-                    <div className="collapse-title text-xl font-medium">
-                        Focus me to see content
+                <div className='col-span-1 w-full mx-auto lg:col-span-3 md:col-span-2 shadow-2xlp-4'>
+                    <div tabIndex={0} className="collapse mb-5 collapse-arrow border border-base-300 bg-base-100 rounded-box mx-auto w-full grid col-span-3 ">
+                        <div className="collapse-title text-xl font-medium">
+                        1. How does react work ?
+                        </div>
+                        <div className="collapse-content"> 
+                            <p>ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.</p>
+                        </div>
                     </div>
-                    <div className="collapse-content"> 
-                        <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                    <div tabIndex={0} className="collapse mb-5 collapse-arrow border border-base-300 bg-base-100 rounded-box mx-auto w-full grid col-span-3 ">
+                        <div className="collapse-title text-xl font-medium">
+                        2. what is the difference between props and state ?
+                        </div>
+                        <div className="collapse-content"> 
+                            <p>Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components.</p>
+                        </div>
                     </div>
-                </div> */}
+                    <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mx-auto w-full grid col-span-3 ">
+                        <div className="collapse-title text-xl font-medium">
+                        3. what type purpose of use useeffect hook ?
+                        </div>
+                        <div className="collapse-content"> 
+                            <p>Sometimes, we want to run some additional code after React has updated the DOM. Network requests, manual DOM mutations, and logging are common examples of effects that don't require a cleanup. We say that because we can run them and immediately forget about them. Let's compare how classes and Hooks let us express such side effects.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className=''>
